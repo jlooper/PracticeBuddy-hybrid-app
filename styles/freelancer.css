@@ -4,6 +4,56 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/*original pastel*/
+/*pink = E9D8DE
+orchid = DCA1DB
+cream = F6E4B2
+blue =  6FCEFF
+purple = A8ADE4*/
+
+/*new primary*/
+/*red: F04848;
+orange: F09018;
+yellow: F0F078;
+blue: 18A8F0;
+dark blue: 181848;
+*/
+
+/*.pink{
+    background:#DCA1DB;
+}
+.salmon{
+    background:#FFC8BA;
+}
+.green{
+    background:#93DFB8;
+}
+.blue{
+    background:#6FCEFF;
+}
+.purple{
+    background:#A8ADE4;
+}*/
+.red{
+    background:#F04848;
+}
+.orange{
+    background:#F09018;
+}
+.yellow{
+    background:#F0F078;
+}
+.lite-blue{
+    background:#18A8F0;
+}
+.dark-blue{
+    background:#181848;
+}
+.purple{
+    background:#8814CA;
+}
+
+
 body {
     overflow-x: hidden;
     color:#FFF;
@@ -23,7 +73,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #FFF;
+    color: #FFF !important;
 }
 
 h1,
@@ -64,7 +114,7 @@ hr.music-light {
 
 hr.music-light:after {
     color: #fff;
-    background-color: #6FCEFF;
+    background-color: #18A8F0;
 }
 
 hr.music-primary:after {
@@ -79,7 +129,7 @@ hr.music-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #6FCEFF;
+    background: #18A8F0;
 }
 
 header .container {
@@ -163,10 +213,10 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
-    background: #A8ADE4;
+    background: #181848;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    background-color: #93DFB8;
+    background-color: #F09018;
 }
 section {
     padding: 100px 0;
@@ -191,21 +241,7 @@ section.success {
         padding-top: 75px;
     }
 }
-.pink{
-    background:#DCA1DB;
-}
-.salmon{
-    background:#FFC8BA;
-}
-.green{
-    background:#93DFB8;
-}
-.blue{
-    background:#6FCEFF;
-}
-.purple{
-    background:#A8ADE4;
-}
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -356,7 +392,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #A8ADE4;
+    background-color: #181848;
 }
 
 .btn-social {
