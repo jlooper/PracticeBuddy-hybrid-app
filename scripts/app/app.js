@@ -9,7 +9,9 @@ var app = (function (win) {
         scheme: appSettings.everlive.scheme
     });
 
-    
+    var total = 0;
+
+
 
     // Initialize KendoUI mobile application
     var mobileApp = new kendo.mobile.Application(document.body, {
@@ -23,11 +25,29 @@ var app = (function (win) {
         return currentTime.getFullYear();
     }());
 
+    var getPractices = (function () {
+
+
+        var data = el.data('PracticeSessions');
+            data.count()
+            .then(function(data){
+                console.log("practices "+data.result)
+                //return data.result;
+                total = data.result;
+                $('.getPractices').text(337+total)
+            },
+            function(error){
+                total = 337;
+            }); 
+
+       
+    }());
+
     
 
     return {
-        everlive: el,
-        getYear: getYear
+        getYear: getYear,
+        getPractices:getPractices
     };
 
 }(window));
