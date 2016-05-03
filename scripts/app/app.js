@@ -1,9 +1,9 @@
 var app = (function (win) {
     'use strict';
 
-    
+ 
 
-    // Initialize Backend Services SDK
+// Initialize Backend Services SDK
     var el = new Everlive({
         apiKey: appSettings.everlive.apiKey,
         scheme: appSettings.everlive.scheme
@@ -14,11 +14,11 @@ var app = (function (win) {
 
 
     // Initialize KendoUI mobile application
-    var mobileApp = new kendo.mobile.Application(document.body, {
-        transition: 'slide',
-        layout: 'mobile-tabstrip',
-        skin: 'flat'
-    });
+   // var mobileApp = new kendo.mobile.Application(document.body, {
+       // transition: 'slide',
+       // layout: 'mobile-tabstrip',
+       // skin: 'flat'
+   // });
 
     var getYear = (function () {
         var currentTime = new Date();
